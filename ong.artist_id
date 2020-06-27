@@ -1,0 +1,18 @@
+
+[1mFrom:[0m /mnt/c/users/shark/dev/flatiron/labs/Active-Record-Association-Methods-onl01-seng-ft-052620/app/models/song.rb @ line 10 Song#drake_made_this:
+
+     [1;34m9[0m: [32mdef[0m [1;34mdrake_made_this[0m
+ => [1;34m10[0m:   binding.pry
+    [1;34m11[0m:   [32mif[0m ![1;34;4mSong[0m.all.any?{|song| song.artist.id == drake.id}
+    [1;34m12[0m:     drake = [1;34;4mArtist[0m.create([35mname[0m: [31m[1;31m"[0m[31mDrake[1;31m"[0m[31m[0m)
+    [1;34m13[0m:     binding.pry
+    [1;34m14[0m:   [32mend[0m 
+    [1;34m15[0m: 
+    [1;34m16[0m:   [1;36mself[0m.artist = drake
+    [1;34m17[0m: 
+    [1;34m18[0m:   [1;34m# when this method is called it should assign the song's artist to Drake[0m
+    [1;34m19[0m:   [1;34m# Drake doesn't exist in the database as an artist yet, so you'll have to create a record[0m
+    [1;34m20[0m:   [1;34m# Hint: you won't want to create an artist record every time this method is called, only if an Drake is *not found*[0m
+    [1;34m21[0m: 
+    [1;34m22[0m: [32mend[0m
+
